@@ -25,10 +25,10 @@ class App extends React.Component {
     this.state = {
       completed: "80"
     };
+    this.donateRef = React.createRef();
   }
 
   componentDidMount() {
-    console.log(process.env);
     window.gapi.load("client:auth2", this.initClient);
   }
 
@@ -70,7 +70,6 @@ class App extends React.Component {
   };
 
   load = callback => {
-    console.log(process.env.REACT_APP_spreadsheetId);
     window.gapi.client.load("sheets", "v4", () => {
       window.gapi.client.sheets.spreadsheets.values
         .get({
@@ -97,25 +96,16 @@ class App extends React.Component {
     });
   };
 
-  showState = () => {
-    console.log(this.state);
-  };
-
   handleChange = e => {
-    console.log(e.target);
     let amount = e.target.value;
-    this.setState(
-      {
-        amount
-      },
-      () => console.log(amount)
-    );
+    this.setState({
+      amount
+    });
   };
 
   handleSubmit = e => {
     if (this.state.percentage >= 100) return;
     if (isNaN(this.state.amount)) {
-      console.log(this.state.amount);
       alert("Not a valid input", this.state.amount);
     } else {
       if (!window.gapi.auth2.getAuthInstance().isSignedIn.get())
@@ -172,6 +162,10 @@ class App extends React.Component {
           });
       });
   };
+
+  scroll = () => {
+    window.scrollTo(0, this.donateRef.current.offsetTop);
+  };
   render() {
     const { classes } = this.props;
 
@@ -218,6 +212,7 @@ class App extends React.Component {
                   component="span"
                   size="large"
                   className={classes.secondButton}
+                  onClick={this.scroll}
                 >
                   Donate
                 </Button>
@@ -298,7 +293,7 @@ class App extends React.Component {
           )}
         </div>
 
-        <div className="donateArea">
+        <div className="donateArea" ref={this.donateRef}>
           <div className="donateAmountWrapper">
             <TextField
               id="filled-adornment-amount"
@@ -335,13 +330,16 @@ class App extends React.Component {
         <Modal
           aria-labelledby="simple-modal-title"
           aria-describedby="simple-modal-description"
-          open={this.state.processing | false}
+          open={this.state.processing || false}
         >
-          <div className={classes.paper}>
+          <div className={classes.waitModal}>
             <Typography variant="h6" id="modal-title">
               Please wait while your donation is being processed
             </Typography>
-            <CircularProgress className={classes.progress} color="secondary" />
+            <CircularProgress
+              className={classes.CircularProgress}
+              color="secondary"
+            />
           </div>
         </Modal>
       </div>

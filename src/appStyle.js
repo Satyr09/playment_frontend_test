@@ -51,6 +51,24 @@ const styles = {
     left: "50%",
     transform: "translate(-50%, -50%)"
   },
+  waitModal: {
+    position: "absolute",
+    width: "50vw",
+    maxWidth: "300px",
+    backgroundColor: "white",
+    padding: "5% 5% 5% 5%",
+    "-webkit-box-shadow": "3px 4px 7px 2px #000000",
+    boxShadow: " 3px 4px 7px 2px #000000",
+    outline: "none",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    textAlign: "center"
+  },
+  CircularProgress: {
+    margin: "0 auto",
+    marginTop: "10px"
+  },
   table: {
     maxWidth: "400px",
     "@media (max-width: 800px)": {
