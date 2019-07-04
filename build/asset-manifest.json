@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/playment_frontend_test/static/css/main.4fcd75ec.chunk.css",
+    "main.js": "/playment_frontend_test/static/js/main.e1c0f4db.chunk.js",
+    "main.js.map": "/playment_frontend_test/static/js/main.e1c0f4db.chunk.js.map",
+    "runtime~main.js": "/playment_frontend_test/static/js/runtime~main.efa16e6a.js",
+    "runtime~main.js.map": "/playment_frontend_test/static/js/runtime~main.efa16e6a.js.map",
+    "static/js/2.a3bcf32d.chunk.js": "/playment_frontend_test/static/js/2.a3bcf32d.chunk.js",
+    "static/js/2.a3bcf32d.chunk.js.map": "/playment_frontend_test/static/js/2.a3bcf32d.chunk.js.map",
+    "index.html": "/playment_frontend_test/index.html",
+    "precache-manifest.d8d402f7314a351236b75892b1bf38e0.js": "/playment_frontend_test/precache-manifest.d8d402f7314a351236b75892b1bf38e0.js",
+    "service-worker.js": "/playment_frontend_test/service-worker.js",
+    "static/css/main.4fcd75ec.chunk.css.map": "/playment_frontend_test/static/css/main.4fcd75ec.chunk.css.map",
+    "static/media/thank.svg": "/playment_frontend_test/static/media/thank.8f62010a.svg",
+    "static/media/topContributors.svg": "/playment_frontend_test/static/media/topContributors.aebbf662.svg",
+    "static/media/weather.svg": "/playment_frontend_test/static/media/weather.78c30879.svg"
+  }
+}
