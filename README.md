@@ -12,13 +12,6 @@ You would need a proper `.env` file for this purpose.(I am mailing the same to y
 Please place it at the root directory.
 
 
-OR :
-
-For demo purposes I have also uploaded the `build/` folder.
-You can simply serve `build/` from a static server (eg `serve`) to see the site running!
-
-
-
 
 ![Landing Section](https://i.postimg.cc/BZHGfFRm/landing.png)
 ![Information Section](https://i.postimg.cc/RVT5NBSf/mid-Section.png)
