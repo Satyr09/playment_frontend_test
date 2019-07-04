@@ -1,4 +1,4 @@
-Unfortunately,since the requirements involved sensitive scopes,and hosted on ghpages/nrtlify which are not top level private domains(which is what google oauth conseent requires) , google sheets api needs explicit verification from google,which would take days.
+Unfortunately,since the requirements involved sensitive scopes,and hosted on ghpages/netlify which are not top level private domains(which is what google oauth consent requires) , google sheets api needs explicit verification from google,which would take days.
 
 For now,you can see the basic UI deployed at [here](https://satyr09.github.io/playment_frontend_test) , but no dynamic interaction.
 
@@ -15,7 +15,7 @@ Please place it at the root directory.
 OR :
 
 For demo purposes I have also uploaded the `build/` folder.
-You can simply server `build/` from a static server to see the site running!
+You can simply serve `build/` from a static server (eg `serve`) to see the site running!
 
 
 
