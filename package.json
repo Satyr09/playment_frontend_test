@@ -8,7 +8,7 @@
     "@material-ui/lab": "4.0.0-alpha.16",
     "gh-pages": "^2.0.1",
     "google-auth-library": "^1.6.1",
-    "googleapis": "^26.0.1",
+    "googleapis": "^39.1.0",
     "install": "^0.12.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
